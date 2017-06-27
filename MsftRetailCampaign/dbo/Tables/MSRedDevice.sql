@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[MSRedDevice] (
+    [ID]                  INT           NOT NULL,
+    [DateLoaded]          DATETIME      DEFAULT (getdate()) NULL,
+    [ModifiedDate]        DATETIME      NULL,
+    [CreatedDate]         DATETIME      NULL,
+    [Name]                VARCHAR (50)  NULL,
+    [HealthState]         VARCHAR (50)  NULL,
+    [CustomerID]          INT           NULL,
+    [OSCaption]           VARCHAR (100) NULL,
+    [OSBuildNumber]       INT           NULL,
+    [Manufacturer]        VARCHAR (100) NULL,
+    [Model]               VARCHAR (100) NULL,
+    [TotalPhysicalMemory] VARCHAR (50)  NULL,
+    [IpAddressV4]         VARCHAR (50)  NULL,
+    [BiosSerialNumber]    VARCHAR (50)  NULL,
+    [StoreNumber]         INT           NULL,
+    [RdxRac]              VARCHAR (50)  NULL,
+    [RdxSku]              VARCHAR (50)  NULL,
+    [BuildToolVersion]    VARCHAR (50)  NULL,
+    [ExperienceName]      VARCHAR (50)  NULL,
+    [WlanSsid]            VARCHAR (50)  NULL,
+    [TimeZone]            VARCHAR (100) NULL,
+    CONSTRAINT [PK_MSRedDevice_ID] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+

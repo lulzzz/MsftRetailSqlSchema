@@ -129,5 +129,8 @@
     <Build Include="dbo\External Tables\Cities.sql">
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
+    <Build Include="dbo\Views\vwMrcSurfaceHubRetailDemoAppUsage.sql" />
+    <Build Include="dbo\Views\vwMrcMusicExperienceAppUsage.sql" />
+    <Build Include="dbo\Views\vwMrcImmersiveDemoFacilitatorAppUsage.sql" />
   </ItemGroup>
 </Project>

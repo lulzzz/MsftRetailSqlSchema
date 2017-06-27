@@ -155,5 +155,8 @@
     <Build Include="dbo\External Tables\Cities.sql">
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
+    <Build Include="dbo\Views\vwMrcMSRedHealthAlertResult.sql" />
+    <Build Include="dbo\Views\vwMrcMSRedHealthAlert.sql" />
+    <Build Include="dbo\Views\vwMrcMSRedDemoDevice.sql" />
   </ItemGroup>
 </Project>

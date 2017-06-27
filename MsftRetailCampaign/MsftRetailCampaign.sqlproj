@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>RdxData</Name>
+    <Name>MsftRetailCampaign</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{8cbeeb1d-3e72-4820-a053-f9eb4de4f22d}</ProjectGuid>
+    <ProjectGuid>{540c890d-3905-4847-a1be-e58800b6b9ff}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>RdxData</RootNamespace>
-    <AssemblyName>RdxData</AssemblyName>
+    <RootNamespace>MsftRetailCampaign</RootNamespace>
+    <AssemblyName>MsftRetailCampaign</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -59,52 +59,17 @@
     <Folder Include="Properties" />
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
-    <Folder Include="dbo\Views\" />
-    <Folder Include="dbo\Functions\" />
-    <Folder Include="dbo\Stored Procedures\" />
-    <Folder Include="dbo\User Defined Types\" />
-    <Folder Include="Security\" />
-    <Folder Include="External Resources\" />
-    <Folder Include="dbo\External Tables\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\XbxAppUsage.sql" />
-    <Build Include="dbo\Tables\RdxDevicesCumulative.sql" />
-    <Build Include="dbo\Tables\RdxDevices.sql" />
-    <Build Include="dbo\Tables\RdxCustomerSessions.sql" />
-    <Build Include="dbo\Tables\RdxAppUsageStoreOverviewLast365Days.sql" />
-    <Build Include="dbo\Tables\RdxAppUsageLast30Days.sql" />
+    <Build Include="dbo\Tables\RdxDevice.sql" />
     <Build Include="dbo\Tables\RdxAppUsage.sql" />
-    <Build Include="dbo\Tables\FriendlyExpName.sql" />
-    <Build Include="dbo\Tables\FriendlyAppName.sql" />
-    <Build Include="dbo\Views\vwRdxAppUsageStoreOverviewLast365Days.sql" />
-    <Build Include="dbo\Views\vwRdxAppUsageLast30Days.sql" />
-    <Build Include="dbo\Functions\ufnIPAddressToInteger.sql" />
-    <Build Include="dbo\Functions\ufnGetWeekNumberFromDate.sql" />
-    <Build Include="dbo\Functions\ufnGetWeekDateFromDate.sql" />
-    <Build Include="dbo\Functions\ufnGetStoreNumberByIp.sql" />
-    <Build Include="dbo\Functions\ufnGetStoreNumberByAcronym.sql" />
-    <Build Include="dbo\Functions\ufnGetQuarterNumberFromDate.sql" />
-    <Build Include="dbo\Functions\ufnGetMSFiscalYearFromDate.sql" />
-    <Build Include="dbo\Functions\ufnGetMSFiscalWeekNumberFromDate.sql" />
-    <Build Include="dbo\Functions\ufnGetMSFiscalQuarterFromDate.sql" />
-    <Build Include="dbo\Functions\ufnConvertDateToMonth.sql" />
-    <Build Include="dbo\Stored Procedures\uspUpdateRdxAppUsageLast30Days.sql" />
-    <Build Include="dbo\Stored Procedures\uspReloadRdxAppUsageStoreOverviewLast365Days.sql" />
-    <Build Include="dbo\Stored Procedures\uspProcessRdxDevices.sql" />
-    <Build Include="dbo\Stored Procedures\uspOverwriteRdxDevices.sql" />
-    <Build Include="dbo\User Defined Types\RdxDevicesType.sql" />
-    <Build Include="Security\ElasticDBQueryCred.sql" />
-    <Build Include="External Resources\RemoteRedDb.sql" />
-    <Build Include="External Resources\RemoteGeoIP.sql" />
-    <Build Include="dbo\External Tables\Stores.sql">
-      <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\External Tables\IpRanges.sql">
-      <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Views\vwMrcXbxAppUsage.sql" />
-    <Build Include="dbo\Views\vwMrcRdxDevice.sql" />
-    <Build Include="dbo\Views\vwMrcRdxAppUsage.sql" />
+    <Build Include="dbo\Tables\MSRetailStore.sql" />
+    <Build Include="dbo\Tables\MSRedHealthAlertResult.sql" />
+    <Build Include="dbo\Tables\MSRedHealthAlert.sql" />
+    <Build Include="dbo\Tables\MSRedDevice.sql" />
+    <Build Include="dbo\Tables\MSLxftSurfaceHubRetailDemoAppUsage.sql" />
+    <Build Include="dbo\Tables\MSLxftMusicExperienceAppUsage.sql" />
+    <Build Include="dbo\Tables\MSLxftIdfAppUsage.sql" />
   </ItemGroup>
 </Project>
