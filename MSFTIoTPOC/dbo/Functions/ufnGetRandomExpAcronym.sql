@@ -1,0 +1,25 @@
+﻿CREATE FUNCTION dbo.ufnGetRandomExpAcronym ()
+RETURNS VARCHAR(50)
+WITH EXECUTE AS CALLER
+AS
+BEGIN
+
+	DECLARE @RandVal INT
+	DECLARE @ExpAcronym VARCHAR(5)
+
+	SET @RandVal = (SELECT RandomInt1to6 FROM Get_RandInts)
+
+	SET @ExpAcronym = (SELECT
+	CASE @RandVal
+	WHEN 1 THEN 'D'
+	WHEN 2 THEN 'O'
+	WHEN 3 THEN 'V'
+	WHEN 4 THEN 'I'
+	WHEN 5 THEN 'C'
+	WHEN 6 THEN 'H'
+	ELSE 'Other'
+	END)
+
+	RETURN @ExpAcronym;
+
+END;

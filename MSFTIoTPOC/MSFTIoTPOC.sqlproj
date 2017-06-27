@@ -57,5 +57,103 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Security\" />
+    <Folder Include="External Resources\" />
+    <Folder Include="dbo\External Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\StoreSummaryExperience.sql" />
+    <Build Include="dbo\Tables\StoreSummaryDevice.sql" />
+    <Build Include="dbo\Tables\StoreHealth.sql" />
+    <Build Include="dbo\Tables\RedDebug.sql" />
+    <Build Include="dbo\Tables\RedClientErrors.sql" />
+    <Build Include="dbo\Tables\MaintenanceNotification.sql" />
+    <Build Include="dbo\Tables\HealthState.sql" />
+    <Build Include="dbo\Tables\HealthMonitorResult.sql" />
+    <Build Include="dbo\Tables\HealthMonitor.sql" />
+    <Build Include="dbo\Tables\ExperienceHealth.sql" />
+    <Build Include="dbo\Tables\ExperienceCorrelation.sql" />
+    <Build Include="dbo\Tables\Experience.sql" />
+    <Build Include="dbo\Tables\DeviceMessageAsa.sql" />
+    <Build Include="dbo\Tables\DeviceMessage.sql" />
+    <Build Include="dbo\Tables\DeviceHistory.sql" />
+    <Build Include="dbo\Tables\Device.sql" />
+    <Build Include="dbo\Views\vwHealthState.sql" />
+    <Build Include="dbo\Views\vwDeviceHistory.sql" />
+    <Build Include="dbo\Views\vwCurrentStoreSummary.sql" />
+    <Build Include="dbo\Views\vwCurrentHealthStateByStoreExperience.sql" />
+    <Build Include="dbo\Views\vwCurrentHealthStateByStore.sql" />
+    <Build Include="dbo\Views\vwCurrentHealthPointsByStoreExperience.sql" />
+    <Build Include="dbo\Views\vwCurrentHealthPointsByStore.sql" />
+    <Build Include="dbo\Views\vwCurrentHealthPercentageByStoreExperience.sql" />
+    <Build Include="dbo\Views\vwCurrentHealthPercentageByStore.sql" />
+    <Build Include="dbo\Views\vwCurrentHealthMonitorResult.sql" />
+    <Build Include="dbo\Views\vwCurrentDeviceDetails.sql" />
+    <Build Include="dbo\Views\vwCurrentDevice.sql" />
+    <Build Include="dbo\Views\vwActiveStore.sql" />
+    <Build Include="dbo\Views\Get_RandInts.sql" />
+    <Build Include="dbo\Views\Get_RAND.sql" />
+    <Build Include="dbo\Functions\ufnIPAddressToInteger.sql" />
+    <Build Include="dbo\Functions\ufnHealthStatePercentageThresholds.sql" />
+    <Build Include="dbo\Functions\ufnGetVersionNumberFromBuildToolVersion.sql" />
+    <Build Include="dbo\Functions\ufnGetStoreNumberByIp.sql" />
+    <Build Include="dbo\Functions\ufnGetStoreNumberByAcronym.sql" />
+    <Build Include="dbo\Functions\ufnGetStoreIdByIp.sql" />
+    <Build Include="dbo\Functions\ufnGetRandomHealthStatusName.sql" />
+    <Build Include="dbo\Functions\ufnGetRandomExpName.sql" />
+    <Build Include="dbo\Functions\ufnGetRandomExpAcronym.sql" />
+    <Build Include="dbo\Functions\ufnGetOfficeVersionFromBuildNumber.sql" />
+    <Build Include="dbo\Functions\ufnGetHealthStateIdFromPercentage.sql" />
+    <Build Include="dbo\Functions\ufnGetHealthStateFromPercentage.sql" />
+    <Build Include="dbo\Functions\ufnGetExpIdByName.sql" />
+    <Build Include="dbo\Functions\ufnGetExpDisplayName.sql" />
+    <Build Include="dbo\Functions\ufnGetDeviceIdBySerialNumber.sql" />
+    <Build Include="dbo\Functions\ufnGetDeviceIdByName.sql" />
+    <Build Include="dbo\Functions\ufnDeriveSerialNumberFromIncomingTelemetry.sql" />
+    <Build Include="dbo\Functions\ufnDeriveExpNameFromIncomingTelemetry.sql" />
+    <Build Include="dbo\Functions\ufnCheckIfAdobeInstalled.sql" />
+    <Build Include="dbo\Stored Procedures\uspUpdateStoreAndExpHealth.sql" />
+    <Build Include="dbo\Stored Procedures\uspUpdateReportMonitorLevel.sql" />
+    <Build Include="dbo\Stored Procedures\uspRunHealthMonitors.sql" />
+    <Build Include="dbo\Stored Procedures\uspProcessDeviceMessage.sql" />
+    <Build Include="dbo\Stored Procedures\uspMoveDeviceMessageAsa.sql" />
+    <Build Include="dbo\Stored Procedures\uspGroomMSRedTables.sql" />
+    <Build Include="dbo\Stored Procedures\uspCheckDeviceHealth.sql" />
+    <Build Include="dbo\Stored Procedures\uspCaptureDeviceHistory.sql" />
+    <Build Include="dbo\Stored Procedures\uspCalculateDeviceExpHealthState.sql" />
+    <Build Include="Security\ElasticDBQueryCred.sql" />
+    <Build Include="External Resources\RemoteGeoIP.sql" />
+    <Build Include="dbo\External Tables\StoreTypes.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\StoreTimeZones.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\Stores.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\Regions.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\Markets.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\MarketRegions.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\IpRanges.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\Countries.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\Cities.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
   </ItemGroup>
 </Project>

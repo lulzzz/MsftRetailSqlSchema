@@ -57,5 +57,77 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Security\" />
+    <Folder Include="External Resources\" />
+    <Folder Include="dbo\External Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\ViveOculusExperienceReport.sql" />
+    <Build Include="dbo\Tables\MapData.sql" />
+    <Build Include="dbo\Tables\InputSurfaceHubEvents.sql" />
+    <Build Include="dbo\Tables\InputRsitLoginAndSearch.sql" />
+    <Build Include="dbo\Tables\InputRsitAppInstall.sql" />
+    <Build Include="dbo\Tables\InputOfficeLauncherTelemetry.sql" />
+    <Build Include="dbo\Tables\InputMsRedDashboardTelemetry.sql" />
+    <Build Include="dbo\Tables\InputIdfTelemetry.sql" />
+    <Build Include="dbo\Tables\InputGrooveTelemetry.sql" />
+    <Build Include="dbo\Tables\GrooveTelemetryReportUserEvent.sql" />
+    <Build Include="dbo\Tables\GrooveTelemetryReportUserActivity.sql" />
+    <Build Include="dbo\Tables\DemoInputOfficeLauncherData.sql" />
+    <Build Include="dbo\Tables\AirWatchDevice.sql" />
+    <Build Include="dbo\Views\vwSurfaceHubSessionActivity.sql" />
+    <Build Include="dbo\Views\vwOfficeLauncherV2.sql" />
+    <Build Include="dbo\Views\vwOfficeLauncherV1.sql" />
+    <Build Include="dbo\Views\vwMicrosoftEducationExperienceSessionOverview.sql" />
+    <Build Include="dbo\Views\vwMicrosoftEducationExperienceSessionActivity.sql" />
+    <Build Include="dbo\Views\vwAppsNowSessionActivity.sql" />
+    <Build Include="dbo\Views\vwActiveStore.sql" />
+    <Build Include="dbo\Functions\ufnGetWeekNumberFromDate.sql" />
+    <Build Include="dbo\Functions\ufnGetWeekDateFromDate.sql" />
+    <Build Include="dbo\Functions\ufnGetStoreNumberByNetworkId.sql" />
+    <Build Include="dbo\Functions\ufnGetQuarterNumberFromDate.sql" />
+    <Build Include="dbo\Functions\ufnGetMSFiscalYearFromDate.sql" />
+    <Build Include="dbo\Functions\ufnGetMSFiscalWeekNumberFromDate.sql" />
+    <Build Include="dbo\Functions\ufnGetMSFiscalQuarterFromDate.sql" />
+    <Build Include="dbo\Functions\ufnGetIdfDurationInSeconds.sql" />
+    <Build Include="dbo\Stored Procedures\uspProcessIncomingSurfaceHubTelemetry.sql" />
+    <Build Include="dbo\Stored Procedures\uspProcessIncomingOfficeLauncherTelemetry.sql" />
+    <Build Include="dbo\Stored Procedures\uspProcessIncomingMsRedTelemetry.sql" />
+    <Build Include="dbo\Stored Procedures\uspProcessIncomingIdfTelemetry.sql" />
+    <Build Include="dbo\Stored Procedures\uspProcessIncomingGrooveTelemetry.sql" />
+    <Build Include="dbo\Stored Procedures\uspProcessAirWatchDevice.sql" />
+    <Build Include="dbo\Stored Procedures\uspConvertIdfDurationToSeconds.sql" />
+    <Build Include="dbo\Stored Procedures\uspAssignStoreNumberForIdfTelemetry.sql" />
+    <Build Include="Security\ElasticDBQueryCred.sql" />
+    <Build Include="External Resources\RemoteGeoIP.sql" />
+    <Build Include="dbo\External Tables\StoreTypes.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\Stores.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\Regions.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\Markets.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\MarketRegions.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\IpRanges.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\Countries.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\Cities.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
   </ItemGroup>
 </Project>

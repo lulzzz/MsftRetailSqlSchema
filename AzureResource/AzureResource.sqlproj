@@ -57,5 +57,23 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\ScuMsaSyncResultEvent.sql" />
+    <Build Include="dbo\Tables\ScuMsaSyncResult.sql" />
+    <Build Include="dbo\Tables\OtherAzureResourceMap.sql" />
+    <Build Include="dbo\Tables\ClassicAzureResourceMap.sql" />
+    <Build Include="dbo\Tables\AzureResourceUsageDEV.sql" />
+    <Build Include="dbo\Tables\AzureResourceUsage.sql" />
+    <Build Include="dbo\Tables\AzureResourceBaseDEV.sql" />
+    <Build Include="dbo\Tables\AzureResourceBase.sql" />
+    <Build Include="dbo\Tables\AzureRateCard.sql" />
+    <Build Include="dbo\Views\vwOtherAzureResourceCostLast30DaysLn.sql" />
+    <Build Include="dbo\Views\vwModernAzureResourceCostLast30DaysLn.sql" />
+    <Build Include="dbo\Views\vwClassicAzureResourceCostLast30DaysLn.sql" />
+    <Build Include="dbo\Views\vwAllAzureResourceCostLast30DaysLn.sql" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,9 @@
+﻿
+CREATE FUNCTION [dbo].[fn_GetZeroBasedIPv4](@ip AS VARCHAR(15)) RETURNS NVARCHAR(15)
+AS
+BEGIN
+	DECLARE @Result NVARCHAR(15)
+	SELECT @Result = CONCAT('0.',PARSENAME(@ip, 3),'.',PARSENAME(@ip, 2),'.',PARSENAME(@ip, 1))
+
+	RETURN @Result
+END
