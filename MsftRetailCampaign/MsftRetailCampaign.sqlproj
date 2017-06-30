@@ -71,5 +71,6 @@
     <Build Include="dbo\Tables\MSLxftSurfaceHubRetailDemoAppUsage.sql" />
     <Build Include="dbo\Tables\MSLxftMusicExperienceAppUsage.sql" />
     <Build Include="dbo\Tables\MSLxftIdfAppUsage.sql" />
+    <Build Include="dbo\Tables\MSArvrDocuSignWaiver.sql" />
   </ItemGroup>
 </Project>
