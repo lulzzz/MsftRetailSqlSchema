@@ -132,6 +132,6 @@
     <Build Include="dbo\Views\vwMrcSurfaceHubRetailDemoAppUsage.sql" />
     <Build Include="dbo\Views\vwMrcMusicExperienceAppUsage.sql" />
     <Build Include="dbo\Views\vwMrcImmersiveDemoFacilitatorAppUsage.sql" />
-    <Build Include="dbo\Views\vwMrcHtcOculusWaiver.sql" />
+    <Build Include="dbo\Views\vwMrcArvrDocuSignWaiver.sql" />
   </ItemGroup>
 </Project>
