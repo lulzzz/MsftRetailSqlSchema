@@ -11,7 +11,10 @@
     [SubscriptionId]    VARCHAR (100) NULL,
     [SubscriptionName]  VARCHAR (100) NULL,
     [Project]           VARCHAR (100) NULL,
+    [SubProject]        VARCHAR (150) NULL,
     [Environment]       VARCHAR (100) NULL,
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
+
+
 
