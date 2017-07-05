@@ -71,9 +71,10 @@
     <Build Include="dbo\Tables\AzureResourceBaseDEV.sql" />
     <Build Include="dbo\Tables\AzureResourceBase.sql" />
     <Build Include="dbo\Tables\AzureRateCard.sql" />
-    <Build Include="dbo\Views\vwOtherAzureResourceCostLast30DaysLn.sql" />
-    <Build Include="dbo\Views\vwModernAzureResourceCostLast30DaysLn.sql" />
-    <Build Include="dbo\Views\vwClassicAzureResourceCostLast30DaysLn.sql" />
-    <Build Include="dbo\Views\vwAllAzureResourceCostLast30DaysLn.sql" />
+    <Build Include="dbo\Views\vwOtherAzureResourceDailyCost.sql" />
+    <Build Include="dbo\Views\vwModernAzureResourceDailyCost.sql" />
+    <Build Include="dbo\Views\vwClassicAzureResourceDailyCost.sql" />
+    <Build Include="dbo\Views\vwAzureSubscriptionDailyCost.sql" />
+    <Build Include="dbo\Views\vwAzureResourceDailyCost.sql" />
   </ItemGroup>
 </Project>

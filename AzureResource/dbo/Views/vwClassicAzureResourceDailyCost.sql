@@ -1,4 +1,6 @@
-﻿CREATE VIEW [vwClassicAzureResourceCostLast30DaysLn] AS
+﻿-- 07.05.2017 (MSRETEL-393): refactoring to support Power BI consumption
+
+CREATE VIEW [vwClassicAzureResourceDailyCost] AS
 SELECT 
     u.BillingDate,
     u.SubscriptionId,
@@ -10,7 +12,5 @@ FROM
     AzureResourceUsage u, 
     AzureRateCard c
 WHERE 
-    u.MeterId = c.MeterId AND u.[Name] IS NOT NULL AND
-	u.BillingDate <= (select CONVERT(date, DATEADD(day, -2, GETDATE()))) AND
-	u.BillingDate >= (select CONVERT(date, DATEADD(day, -32, GETDATE())))
+    u.MeterId = c.MeterId AND u.[Name] IS NOT NULL
 group by u.BillingDate, u.SubscriptionId, u.MeterCategory, u.MeterSubCategory, u.[Name]
