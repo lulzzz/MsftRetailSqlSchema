@@ -60,6 +60,8 @@
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Views\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\ScuMsaSyncResultEvent.sql" />
@@ -76,5 +78,7 @@
     <Build Include="dbo\Views\vwClassicAzureResourceDailyCost.sql" />
     <Build Include="dbo\Views\vwAzureSubscriptionDailyCost.sql" />
     <Build Include="dbo\Views\vwAzureResourceDailyCost.sql" />
+    <Build Include="dbo\Functions\ufnGetAzureFactoryResourceUri.sql" />
+    <Build Include="dbo\Stored Procedures\uspMapAzureDataFactoryResources.sql" />
   </ItemGroup>
 </Project>
